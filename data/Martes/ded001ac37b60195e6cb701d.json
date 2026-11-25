@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "serverTime": 1795644349771,
+  "serverTime": 1795645057529,
   "saveName": "Martes",
   "mapImage": "mapas/Martes.png?v=1795034993897",
   "day": 47,
@@ -557,7 +557,7 @@
     "bankActive": true
   },
   "static": true,
-  "exportedAt": "2026-11-25T22:05:49.770Z",
+  "exportedAt": "2026-11-25T22:17:37.526Z",
   "partida": "Martes",
   "lanBaseUrl": "http://192.168.0.25:3000"
 }

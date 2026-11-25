@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "serverTime": 1795644349793,
+  "serverTime": 1795645057557,
   "saveName": "Sabados",
   "mapImage": "mapas/Sabados.png?v=1795039878048",
   "day": 35,
@@ -468,7 +468,7 @@
     "bankActive": true
   },
   "static": true,
-  "exportedAt": "2026-11-25T22:05:49.770Z",
+  "exportedAt": "2026-11-25T22:17:37.526Z",
   "partida": "Sabados",
   "lanBaseUrl": "http://192.168.0.25:3000"
 }

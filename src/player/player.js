@@ -1463,7 +1463,10 @@
       : 'fecha desconocida';
     const name = data && data.saveName ? data.saveName : 'Partida';
     const day = Math.max(0, Math.trunc(num(data && data.day)));
-    $('staticBannerText').textContent = `${name} · Día ${day} · instantánea del ${whenText}`;
+    // La partida y el día siguen disponibles como detalle, pero el texto visible
+    // en GitHub es solo el estado de la vista.
+    banner.title = `${name} · Día ${day} · instantánea del ${whenText}`;
+    $('staticBannerText').textContent = 'Vista solo lectura';
     const lanBtn = $('staticLanBtn');
     const lanBase = String((data && data.lanBaseUrl) || '').replace(/\/$/, '');
     const table = /^[A-Za-z0-9][A-Za-z0-9_-]{0,59}$/.test(String((data && data.partida) || partida || ''))
