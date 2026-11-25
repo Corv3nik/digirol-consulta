@@ -2,34 +2,34 @@
   "ok": true,
   "saveName": "Prueba",
   "day": 72,
-  "exportedAt": "2026-11-25T22:48:45.744Z",
+  "exportedAt": "2026-11-25T23:18:26.010Z",
   "mapFile": null,
-  "lanBaseUrl": "http://192.168.0.25:3002",
+  "lanBaseUrl": "http://192.168.0.25:3000",
   "playerCount": 1,
   "tables": [
     {
       "name": "Martes",
       "day": 47,
       "playerCount": 4,
-      "exportedAt": "2026-11-25T22:48:45.744Z"
+      "exportedAt": "2026-11-25T23:18:26.010Z"
     },
     {
       "name": "Prueba",
       "day": 72,
       "playerCount": 1,
-      "exportedAt": "2026-11-25T22:48:45.744Z"
+      "exportedAt": "2026-11-25T23:18:26.010Z"
     },
     {
       "name": "Sabados",
       "day": 35,
       "playerCount": 4,
-      "exportedAt": "2026-11-25T22:48:45.744Z"
+      "exportedAt": "2026-11-25T23:18:26.010Z"
     },
     {
       "name": "Viernes",
       "day": 52,
       "playerCount": 4,
-      "exportedAt": "2026-11-25T22:48:45.744Z"
+      "exportedAt": "2026-11-25T23:18:26.010Z"
     }
   ]
 }

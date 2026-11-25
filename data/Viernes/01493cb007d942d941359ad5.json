@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "serverTime": 1795646925793,
+  "serverTime": 1795648706044,
   "saveName": "Viernes",
   "publicBaseUrl": "https://Corv3nik.github.io/digirol-consulta/",
   "mapImage": "mapas/Viernes.png?v=1795218366555",
@@ -419,7 +419,7 @@
     "bankActive": true
   },
   "static": true,
-  "exportedAt": "2026-11-25T22:48:45.744Z",
+  "exportedAt": "2026-11-25T23:18:26.010Z",
   "partida": "Viernes",
-  "lanBaseUrl": "http://192.168.0.25:3002"
+  "lanBaseUrl": "http://192.168.0.25:3000"
 }
