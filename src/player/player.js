@@ -117,12 +117,30 @@
   }
 
   // ---------- Arranque / errores ----------
+  function staticFallbackUrl() {
+    const base = String((current && current.publicBaseUrl) || '').replace(/\/$/, '');
+    if (!base || !token) return '';
+    const rawTable = String((current && current.saveName) || partida || '');
+    const table = /^[A-Za-z0-9][A-Za-z0-9_-]{0,59}$/.test(rawTable) ? rawTable : '';
+    const query = table
+      ? `?partida=${encodeURIComponent(table)}&token=${encodeURIComponent(token)}`
+      : `?token=${encodeURIComponent(token)}`;
+    return `${base}/player.html${query}`;
+  }
+
   function showError(title, message) {
     $('bootScreen').hidden = true;
     $('app').hidden = true;
     $('errorScreen').hidden = false;
     $('errorTitle').textContent = title;
     $('errorMessage').textContent = message;
+    const fallbackBtn = $('staticFallbackBtn');
+    if (fallbackBtn) {
+      const url = !STATIC_MODE && title === 'Sesion pausada' ? staticFallbackUrl() : '';
+      fallbackBtn.hidden = !url;
+      fallbackBtn.dataset.url = url;
+      fallbackBtn.onclick = url ? () => { location.href = url; } : null;
+    }
   }
 
   function hideBoot() {

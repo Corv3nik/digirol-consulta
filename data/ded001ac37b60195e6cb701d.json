@@ -1,7 +1,8 @@
 {
   "ok": true,
-  "serverTime": 1795645057529,
+  "serverTime": 1795646089291,
   "saveName": "Martes",
+  "publicBaseUrl": "https://Corv3nik.github.io/digirol-consulta/",
   "mapImage": "mapas/Martes.png?v=1795034993897",
   "day": 47,
   "isDayTime": true,
@@ -557,7 +558,7 @@
     "bankActive": true
   },
   "static": true,
-  "exportedAt": "2026-11-25T22:17:37.526Z",
+  "exportedAt": "2026-11-25T22:34:49.285Z",
   "partida": "Martes",
   "lanBaseUrl": "http://192.168.0.25:3000"
 }

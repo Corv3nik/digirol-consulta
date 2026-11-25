@@ -1,7 +1,8 @@
 {
   "ok": true,
-  "serverTime": 1795645057543,
+  "serverTime": 1795646089301,
   "saveName": "Prueba",
+  "publicBaseUrl": "https://Corv3nik.github.io/digirol-consulta/",
   "mapImage": null,
   "day": 72,
   "isDayTime": true,
@@ -957,7 +958,7 @@
     "bankActive": true
   },
   "static": true,
-  "exportedAt": "2026-11-25T22:17:37.526Z",
+  "exportedAt": "2026-11-25T22:34:49.285Z",
   "partida": "Prueba",
   "lanBaseUrl": "http://192.168.0.25:3000"
 }

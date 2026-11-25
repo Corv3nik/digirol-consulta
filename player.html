@@ -20,7 +20,10 @@
     <div class="error-icon">🔒</div>
     <h1 id="errorTitle">Enlace no valido</h1>
     <p id="errorMessage">Pide al Master un enlace nuevo.</p>
-    <button class="btn-primary" onclick="location.reload()">Reintentar</button>
+    <div class="error-actions">
+      <button class="btn-primary" onclick="location.reload()">Reintentar</button>
+      <button id="staticFallbackBtn" class="btn-secondary" type="button" hidden>📄 Volver a solo lectura</button>
+    </div>
   </div>
 
   <div id="app" class="app" hidden>
