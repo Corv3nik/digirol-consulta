@@ -1,0 +1,585 @@
+{
+  "ok": true,
+  "serverTime": 1795644058426,
+  "saveName": "Martes",
+  "mapImage": "mapas/Martes.png?v=1795034993897",
+  "day": 47,
+  "isDayTime": true,
+  "prosperity": 17,
+  "prosperityDigimons": [
+    {
+      "name": "Shellmon",
+      "benefit": "📰 Habilita el tablero de anuncios",
+      "image": "https://digi-api.com/images/digimon/w/Shellmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Agumon",
+      "benefit": "🏦 Habilita el monedero y banco para depositar bits",
+      "image": "https://digi-api.com/images/digimon/w/Agumon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Kunemon",
+      "benefit": "🌲 Habilita el atajo desde el bosque y ofrece servicios de carpinteria",
+      "image": "https://digi-api.com/images/digimon/w/Kunemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Betamon",
+      "benefit": "🛍️ Habilita la tienda básica",
+      "image": "https://digi-api.com/images/digimon/w/Betamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Patamon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Patamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Piyomon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Piyomon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Monochromon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Monochromon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Unimon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Unimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Palmon",
+      "benefit": "🌾 Mejora la granja (+1 🍖 extra) y otros tipos de cultivos",
+      "image": "https://digi-api.com/images/digimon/w/Palmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Vegimon",
+      "benefit": "🥗 Mejora la granja (+1 🍖 extra)",
+      "image": "https://digi-api.com/images/digimon/w/Vegimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Gomamon",
+      "benefit": "🎣 Habilita la pesca diaria (+1 🍖 a cada jugador)",
+      "image": "https://digi-api.com/images/digimon/w/Gomamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Meramon",
+      "benefit": "🔥 Habilita el restaurante (Platos calientes)",
+      "image": "https://digi-api.com/images/digimon/w/Meramon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Coelamon",
+      "benefit": "⚓ Habilita el muelle",
+      "image": "https://digi-api.com/images/digimon/w/Coelamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Drimogemon",
+      "benefit": "⛏️ Habilita acceso a la mina",
+      "image": "https://digi-api.com/images/digimon/w/Drimogemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Elecmon",
+      "benefit": "⚡ Habilita la planta de energía",
+      "image": "https://digi-api.com/images/digimon/w/Elecmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Centalmon",
+      "benefit": "🏥 Habilita la clínica médica",
+      "image": "https://digi-api.com/images/digimon/w/Centalmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Penmon",
+      "benefit": "🥌 Habilita el área de curling en Freezeland",
+      "image": "https://digi-api.com/images/digimon/w/Penmon.png",
+      "daysLeft": 0
+    }
+  ],
+  "comforts": [
+    {
+      "key": "alimento",
+      "label": "Alimento",
+      "icon": "🍖",
+      "color": "#f59e0b",
+      "value": 7,
+      "max": 10,
+      "contribution": 5,
+      "adjustment": 2
+    },
+    {
+      "key": "comodidad",
+      "label": "Comodidad",
+      "icon": "🛋️",
+      "color": "#38bdf8",
+      "value": 4,
+      "max": 10,
+      "contribution": 4,
+      "adjustment": 0
+    },
+    {
+      "key": "entorno",
+      "label": "Entorno",
+      "icon": "🌳",
+      "color": "#22c55e",
+      "value": 5,
+      "max": 10,
+      "contribution": 4,
+      "adjustment": 1
+    },
+    {
+      "key": "limpieza",
+      "label": "Limpieza",
+      "icon": "🧹",
+      "color": "#a78bfa",
+      "value": 0,
+      "max": 10,
+      "contribution": 1,
+      "adjustment": -1
+    },
+    {
+      "key": "seguridad",
+      "label": "Seguridad",
+      "icon": "🛡️",
+      "color": "#ef4444",
+      "value": 3,
+      "max": 10,
+      "contribution": 2,
+      "adjustment": 1
+    },
+    {
+      "key": "ocio",
+      "label": "Ocio",
+      "icon": "🎡",
+      "color": "#ec4899",
+      "value": 3,
+      "max": 10,
+      "contribution": 3,
+      "adjustment": 0
+    }
+  ],
+  "nativeResidents": [
+    {
+      "name": "Jijimon",
+      "desc": "Anciano fundador de Ciudad File. Ofrece información sobre las misiones principales.",
+      "grayscale": false,
+      "comfort": [],
+      "image": "https://digi-api.com/images/digimon/w/Jijimon.png"
+    },
+    {
+      "name": "Babamon",
+      "desc": "QEPD Abuelita.",
+      "grayscale": true,
+      "comfort": [],
+      "image": "https://digi-api.com/images/digimon/w/Babamon.png"
+    },
+    {
+      "name": "Tunomon",
+      "desc": "Enfermero a cargo de la guarderia y cuidado de los huevos.",
+      "grayscale": false,
+      "comfort": [
+        "seguridad"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Tunomon.png"
+    },
+    {
+      "name": "Tanemon",
+      "desc": "Trabaja la huerta básica y se encarga de las comidas diarias.",
+      "grayscale": false,
+      "comfort": [
+        "alimento",
+        "limpieza"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Tanemon.png"
+    },
+    {
+      "name": "Poyomon",
+      "desc": "Ayuda a Agumon en el banco y ofrece estudios sobre la digievolucion.",
+      "grayscale": false,
+      "comfort": [
+        "comodidad"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Poyomon.png"
+    },
+    {
+      "name": "Yuramon",
+      "desc": "Ofrece información sobre las distintas regiones de la isla File.",
+      "grayscale": false,
+      "comfort": [
+        "entorno"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Yuramon.png"
+    },
+    {
+      "name": "Culumon",
+      "desc": "Habilita las digievoluciones y le encanta jugar.",
+      "grayscale": false,
+      "comfort": [
+        "ocio"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Culumon.png"
+    }
+  ],
+  "news": [
+    {
+      "id": "nido_gran_canon",
+      "emoji": "🪺",
+      "text": "Un nido gigante en la cima del gran cañon."
+    },
+    {
+      "id": "ballena_hielo",
+      "emoji": "🐋",
+      "text": "La ballena encallada en el hielo."
+    },
+    {
+      "id": "cuidador_nieves",
+      "emoji": "❄️",
+      "text": "El cuidador de las nieves."
+    },
+    {
+      "id": "esculturas_pantano_geko",
+      "emoji": "🗿",
+      "text": "Las esculturas del pantano geko."
+    },
+    {
+      "id": "roca_prehistorica",
+      "emoji": "☄️",
+      "text": "La roca prehistórica que cayó del cielo."
+    }
+  ],
+  "character": {
+    "id": 1789072855088,
+    "jugador": "Dylan",
+    "nombre": "Alice Schuberg",
+    "edad": "13",
+    "emblema": "Luz",
+    "digimon": "Plotmon",
+    "fase": "Novato",
+    "tipo": "Vacuna",
+    "image": "https://digi-api.com/images/digimon/w/Plotmon.png",
+    "stats": {
+      "salud": 93,
+      "espiritu": 60,
+      "fuerza": 44,
+      "defensa": 44,
+      "velocidad": 58,
+      "inteligencia": 49
+    },
+    "statsBonus": {
+      "fuerza": 6,
+      "defensa": 6,
+      "velocidad": 6,
+      "inteligencia": 6
+    },
+    "statsBonusParts": {
+      "fuerza": [
+        6
+      ],
+      "defensa": [
+        6
+      ],
+      "velocidad": [
+        6
+      ],
+      "inteligencia": [
+        6
+      ]
+    },
+    "statSaturation": {
+      "stat": null,
+      "penalty": 0
+    },
+    "hearts": 3,
+    "maxHearts": 3,
+    "muertes": 0,
+    "bits": 200,
+    "bitsBanco": 0,
+    "comida": 55,
+    "comidaMax": 3,
+    "discos": 4,
+    "status": [],
+    "indicators": [
+      {
+        "key": "carne",
+        "label": "Carne",
+        "icon": "🍖"
+      },
+      {
+        "key": "pez",
+        "label": "Pescado",
+        "icon": "🐟"
+      },
+      {
+        "key": "hongo",
+        "label": "Hongo",
+        "icon": "🍄"
+      },
+      {
+        "key": "manzana",
+        "label": "Manzana",
+        "icon": "🍎"
+      },
+      {
+        "key": "caca",
+        "label": "Caca",
+        "icon": "💩"
+      },
+      {
+        "key": "sueno",
+        "label": "Sueno",
+        "icon": "💤"
+      }
+    ],
+    "needs": {
+      "food": {
+        "satiated": 3,
+        "required": 3
+      },
+      "caca": true,
+      "sueno": true,
+      "training": {
+        "guante": false,
+        "escudo": false,
+        "espadas": false
+      }
+    },
+    "inventory": [
+      {
+        "id": "carne",
+        "nombre": "Carne",
+        "icono": "🍖",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo carne).",
+        "imagen": "",
+        "subtipo": "Carne",
+        "sacia": 1,
+        "cantidad": 24
+      },
+      {
+        "id": "hongo",
+        "nombre": "Hongo",
+        "icono": "🍄",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo vegetal).",
+        "imagen": "",
+        "subtipo": "Vegetal",
+        "sacia": 1,
+        "cantidad": 8
+      },
+      {
+        "id": "hongo_feliz",
+        "nombre": "Hongo Feliz",
+        "icono": "🍄✨",
+        "tipo": "Alimento",
+        "desc": "Sacia 3 ranuras de comida. Riesgo descriptivo de causar enfermedad.",
+        "imagen": "",
+        "subtipo": "Vegetal",
+        "sacia": 3,
+        "cantidad": 5
+      },
+      {
+        "id": "pez_pequeno",
+        "nombre": "Pez Pequeño",
+        "icono": "🐟",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo pescado).",
+        "imagen": "",
+        "subtipo": "Pescado",
+        "sacia": 1,
+        "cantidad": 7
+      },
+      {
+        "id": "zanahoria",
+        "nombre": "Zanahoria",
+        "icono": "🥕",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo vegetal).",
+        "imagen": "",
+        "subtipo": "Vegetal",
+        "sacia": 1,
+        "cantidad": 7
+      },
+      {
+        "id": "alga_marina",
+        "nombre": "Alga marina",
+        "icono": "🪸",
+        "tipo": "Material",
+        "desc": "Sin descripción.",
+        "imagen": "",
+        "subtipo": "Otro",
+        "cantidad": 1
+      },
+      {
+        "id": "chatarra",
+        "nombre": "Chatarra",
+        "icono": "⚙️",
+        "tipo": "Material",
+        "desc": "Material de construcción u objeto común acumulable.",
+        "imagen": "",
+        "subtipo": "Otro",
+        "cantidad": 3
+      },
+      {
+        "id": "cana_vieja",
+        "nombre": "Caña de Pesca Vieja",
+        "icono": "🎣",
+        "tipo": "Herramienta",
+        "desc": "Permite pescar peces pequeños en zonas de agua.",
+        "imagen": "",
+        "cantidad": 1
+      },
+      {
+        "id": "lapiz_9738",
+        "nombre": "Lapiz",
+        "icono": "✏️",
+        "tipo": "General",
+        "desc": "Objeto para escribir o dibujar",
+        "imagen": "",
+        "subtipo": "Otro",
+        "cantidad": 1
+      },
+      {
+        "id": "casco_de_centalmon_rqjcovc",
+        "nombre": "Casco de Centalmon",
+        "icono": "🧬",
+        "tipo": "Evolucion",
+        "desc": "Desbloquea permanentemente la evolución a Centalmon.",
+        "imagen": "",
+        "subtipo": "Evolucion",
+        "evolucionTarget": "Centalmon",
+        "cantidad": 1
+      },
+      {
+        "id": "banana",
+        "nombre": "Banana",
+        "icono": "🍌",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo fruta).",
+        "imagen": "",
+        "subtipo": "Fruta",
+        "sacia": 1,
+        "cantidad": 4
+      },
+      {
+        "id": "disco_curacion",
+        "nombre": "Disco de Curación",
+        "icono": "💾",
+        "tipo": "Curación",
+        "desc": "Restaura 1 corazón de resistencia del personaje.",
+        "imagen": "",
+        "curacion": 1,
+        "cantidad": 4
+      },
+      {
+        "id": "piloto_automatico",
+        "nombre": "Piloto Automático",
+        "icono": "🛸",
+        "tipo": "Utilería",
+        "desc": "Teletransporta inmediatamente al grupo a la ciudad.",
+        "imagen": "",
+        "cantidad": 1
+      }
+    ],
+    "hasCardAlbum": false,
+    "cardsAlbum": [],
+    "cardMarket": {
+      "active": true,
+      "day": 47,
+      "requests": [
+        {
+          "npc": "Patamon",
+          "npcName": "Patamon",
+          "icon": "🕊️",
+          "itemId": "carta_rize_greymon",
+          "name": "Rize Greymon",
+          "cardName": "Carta: Rize Greymon",
+          "imagen": "https://digi-api.com/images/digimon/w/Rize_Greymon.png",
+          "rarezaKey": "epic",
+          "rareza": "Épica",
+          "rarezaColor": "#c084fc",
+          "rarezaBorder": "#a855f7",
+          "price": 1000,
+          "sold": false,
+          "pending": false
+        },
+        {
+          "npc": "Piyomon",
+          "npcName": "Piyomon",
+          "icon": "🔥",
+          "itemId": "carta_bakemon",
+          "name": "Bakemon",
+          "cardName": "Carta: Bakemon",
+          "imagen": "https://digi-api.com/images/digimon/w/Bakemon.png",
+          "rarezaKey": "common",
+          "rareza": "Común",
+          "rarezaColor": "#94a3b8",
+          "rarezaBorder": "#64748b",
+          "price": 100,
+          "sold": false,
+          "pending": false
+        },
+        {
+          "npc": "Unimon",
+          "npcName": "Unimon",
+          "icon": "🦄",
+          "itemId": "carta_jewelbeemon",
+          "name": "Jewelbeemon",
+          "cardName": "Carta: Jewelbeemon",
+          "imagen": "https://digi-api.com/images/digimon/w/Jewelbeemon.png",
+          "rarezaKey": "epic",
+          "rareza": "Épica",
+          "rarezaColor": "#c084fc",
+          "rarezaBorder": "#a855f7",
+          "price": 1000,
+          "sold": false,
+          "pending": false
+        },
+        {
+          "npc": "Monochromon",
+          "npcName": "Monochromon",
+          "icon": "🦕",
+          "itemId": "carta_nanimon",
+          "name": "Nanimon",
+          "cardName": "Carta: Nanimon",
+          "imagen": "https://digi-api.com/images/digimon/w/Nanimon.png",
+          "rarezaKey": "common",
+          "rareza": "Común",
+          "rarezaColor": "#94a3b8",
+          "rarezaBorder": "#64748b",
+          "price": 100,
+          "sold": false,
+          "pending": false
+        }
+      ]
+    },
+    "cardSaleRequest": null,
+    "evolutions": [],
+    "evolutionLockedDay": 47,
+    "naturalEvolution": "",
+    "effectLabels": {
+      "buff_Agua": "Peces marino"
+    },
+    "evolutionRequest": null,
+    "playerNotes": "",
+    "playerNotesUpdatedAt": 0,
+    "bankActive": true
+  },
+  "static": true,
+  "exportedAt": "2026-11-25T22:00:58.421Z",
+  "partida": "Martes",
+  "lanBaseUrl": "http://192.168.0.25:3000"
+}

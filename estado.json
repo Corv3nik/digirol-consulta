@@ -2,8 +2,34 @@
   "ok": true,
   "saveName": "Sabados",
   "day": 35,
-  "exportedAt": "2026-11-25T21:31:29.045Z",
+  "exportedAt": "2026-11-25T22:00:58.421Z",
   "mapFile": "Sabados.png",
   "lanBaseUrl": "http://192.168.0.25:3000",
-  "playerCount": 4
+  "playerCount": 4,
+  "tables": [
+    {
+      "name": "Martes",
+      "day": 47,
+      "playerCount": 4,
+      "exportedAt": "2026-11-25T22:00:58.421Z"
+    },
+    {
+      "name": "Prueba",
+      "day": 72,
+      "playerCount": 1,
+      "exportedAt": "2026-11-25T22:00:58.421Z"
+    },
+    {
+      "name": "Sabados",
+      "day": 35,
+      "playerCount": 4,
+      "exportedAt": "2026-11-25T22:00:58.421Z"
+    },
+    {
+      "name": "Viernes",
+      "day": 52,
+      "playerCount": 4,
+      "exportedAt": "2026-11-25T22:00:58.421Z"
+    }
+  ]
 }

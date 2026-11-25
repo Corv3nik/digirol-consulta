@@ -74,6 +74,8 @@
   const token = getToken();
   // GitHub Pages sirve el HTML sin servidor: solo lectura desde un JSON congelado.
   const params = new URLSearchParams(location.search);
+  const partidaParam = String(params.get('partida') || '');
+  const partida = /^[A-Za-z0-9][A-Za-z0-9_-]{0,59}$/.test(partidaParam) ? partidaParam : '';
   const STATIC_MODE = params.get('static') === '1' || /(^|\.)github\.io$/i.test(location.hostname);
   let current = null;
   let eventSource = null;
@@ -1464,10 +1466,14 @@
     $('staticBannerText').textContent = `${name} · Día ${day} · instantánea del ${whenText}`;
     const lanBtn = $('staticLanBtn');
     const lanBase = String((data && data.lanBaseUrl) || '').replace(/\/$/, '');
+    const table = /^[A-Za-z0-9][A-Za-z0-9_-]{0,59}$/.test(String((data && data.partida) || partida || ''))
+      ? String((data && data.partida) || partida)
+      : '';
     if (lanBtn) {
       lanBtn.hidden = !(lanBase && token);
       lanBtn.onclick = () => {
-        location.href = `${lanBase}/p/${encodeURIComponent(token)}`;
+        const tableQuery = table ? `?partida=${encodeURIComponent(table)}` : '';
+        location.href = `${lanBase}/p/${encodeURIComponent(token)}${tableQuery}`;
       };
     }
     banner.hidden = false;
@@ -1480,7 +1486,12 @@
     }
     if (STATIC_MODE) {
       try {
-        const res = await fetch(`data/${encodeURIComponent(token)}.json`, { cache: 'no-store' });
+        const folder = partida ? `data/${encodeURIComponent(partida)}/` : 'data/';
+        let res = await fetch(`${folder}${encodeURIComponent(token)}.json`, { cache: 'no-store' });
+        // Compatibilidad: los enlaces antiguos guardados antes de publicar por partida.
+        if (!res.ok && partida) {
+          res = await fetch(`data/${encodeURIComponent(token)}.json`, { cache: 'no-store' });
+        }
         if (!res.ok) throw new Error('No se encontró la instantánea de este jugador');
         const data = await res.json();
         showStaticBanner(data);

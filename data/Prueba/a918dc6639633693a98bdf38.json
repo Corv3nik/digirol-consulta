@@ -1,0 +1,963 @@
+{
+  "ok": true,
+  "serverTime": 1795644058432,
+  "saveName": "Prueba",
+  "mapImage": null,
+  "day": 72,
+  "isDayTime": true,
+  "prosperity": 42,
+  "prosperityDigimons": [
+    {
+      "name": "Shellmon",
+      "benefit": "📰 Habilita el tablero de anuncios",
+      "image": "https://digi-api.com/images/digimon/w/Shellmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Agumon",
+      "benefit": "🏦 Habilita el monedero y banco para depositar bits",
+      "image": "https://digi-api.com/images/digimon/w/Agumon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Kunemon",
+      "benefit": "🌲 Habilita el atajo desde el bosque y ofrece servicios de carpinteria",
+      "image": "https://digi-api.com/images/digimon/w/Kunemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Betamon",
+      "benefit": "🛍️ Habilita la tienda básica",
+      "image": "https://digi-api.com/images/digimon/w/Betamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Patamon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Patamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Piyomon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Piyomon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Monochromon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Monochromon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Unimon",
+      "benefit": "🏬 Aumenta el nivel de la tienda",
+      "image": "https://digi-api.com/images/digimon/w/Unimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Palmon",
+      "benefit": "🌾 Mejora la granja (+1 🍖 extra) y otros tipos de cultivos",
+      "image": "https://digi-api.com/images/digimon/w/Palmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Vegimon",
+      "benefit": "🥗 Mejora la granja (+1 🍖 extra)",
+      "image": "https://digi-api.com/images/digimon/w/Vegimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Gomamon",
+      "benefit": "🎣 Habilita la pesca diaria (+1 🍖 a cada jugador)",
+      "image": "https://digi-api.com/images/digimon/w/Gomamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Shortmon",
+      "benefit": "🎂 Entrega diaria de pastel (+1 🎂 a los jugadores elegidos)",
+      "image": "https://digi-api.com/images/digimon/w/Shortmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Meramon",
+      "benefit": "🔥 Habilita el restaurante (Platos calientes)",
+      "image": "https://digi-api.com/images/digimon/w/Meramon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Garurumon",
+      "benefit": "🏬 Mejora el restaurante (Platos fríos)",
+      "image": "https://digi-api.com/images/digimon/w/Garurumon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Coelamon",
+      "benefit": "⚓ Habilita el muelle",
+      "image": "https://digi-api.com/images/digimon/w/Coelamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Seadramon",
+      "benefit": "⛵ Habilita la navegación al Lago Dragon",
+      "image": "https://digi-api.com/images/digimon/w/Seadramon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Whamon",
+      "benefit": "🐋 Habilita transporte acuático a la Fábrica",
+      "image": "https://digi-api.com/images/digimon/w/Whamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Drimogemon",
+      "benefit": "⛏️ Habilita acceso a la mina",
+      "image": "https://digi-api.com/images/digimon/w/Drimogemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Gabumon",
+      "benefit": "⛏️ Mejora la búsqueda de objetos en la mina",
+      "image": "https://digi-api.com/images/digimon/w/Gabumon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Birdramon",
+      "benefit": "🦅 Habilita transporte aéreo",
+      "image": "https://digi-api.com/images/digimon/w/Birdramon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Elecmon",
+      "benefit": "⚡ Habilita la planta de energía",
+      "image": "https://digi-api.com/images/digimon/w/Elecmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Centalmon",
+      "benefit": "🏥 Habilita la clínica médica",
+      "image": "https://digi-api.com/images/digimon/w/Centalmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Tyranomon",
+      "benefit": "🏆 Habilita el ring de torneos",
+      "image": "https://digi-api.com/images/digimon/w/Tyranomon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Penmon",
+      "benefit": "🥌 Habilita el área de curling en Freezeland",
+      "image": "https://digi-api.com/images/digimon/w/Penmon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Piccolomon",
+      "benefit": "☯️ Ofrece conocimiento de los Dioses",
+      "image": "https://digi-api.com/images/digimon/w/Piccolomon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Cockatrimon",
+      "benefit": "🏥 Decora con monumentos la ciudad",
+      "image": "https://digi-api.com/images/digimon/w/Cockatrimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Bakemon",
+      "benefit": "📖 Venta diaria de libro de Inteligencia (+1 INT)",
+      "image": "https://digi-api.com/images/digimon/w/Bakemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Orgemon",
+      "benefit": "👹 Agente de seguridad para la ciudad",
+      "image": "https://digi-api.com/images/digimon/w/Orgemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Nanimon",
+      "benefit": "🎱 Un vagabundo que recolecta basura todos los dias.",
+      "image": "https://digi-api.com/images/digimon/w/Nanimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Sukamon",
+      "benefit": "💩 Mantiene limpia la ciudad",
+      "image": "https://digi-api.com/images/digimon/w/Sukamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Numemon",
+      "benefit": "💩 Sistema de alcantarillado",
+      "image": "https://digi-api.com/images/digimon/w/Numemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Monzaemon",
+      "benefit": "🧸 Disfraz para Numemon",
+      "image": "https://digi-api.com/images/digimon/w/Monzaemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Angemon",
+      "benefit": "📜 Entrega información y pistas sobre la isla",
+      "image": "https://digi-api.com/images/digimon/w/Angemon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Yukidarumon",
+      "benefit": "👶 Da información sobre el cuidado y la evolución",
+      "image": "https://digi-api.com/images/digimon/w/Yukidarumon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Leomon",
+      "benefit": "⚔️ Mejora el entrenamiento de fuerza +5",
+      "image": "https://digi-api.com/images/digimon/w/Leomon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Kuwagamon",
+      "benefit": "🛡️ Mejora el entrenamiento de defensa +5",
+      "image": "https://digi-api.com/images/digimon/w/Kuwagamon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Kabuterimon",
+      "benefit": "💨 Mejora el entrenamiento de velocidad +5",
+      "image": "https://digi-api.com/images/digimon/w/Kabuterimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Jyureimon",
+      "benefit": "🧠 Mejora el entrenamiento de inteligencia +5",
+      "image": "https://digi-api.com/images/digimon/w/Jyureimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Andromon",
+      "benefit": "⚙️ Habilita el taller de mejoras avanzadas",
+      "image": "https://digi-api.com/images/digimon/w/Andromon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Devimon",
+      "benefit": "😈 Da información sobre las evoluciones erroneas",
+      "image": "https://digi-api.com/images/digimon/w/Devimon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Vademon",
+      "benefit": "👽 Objeto de evolución",
+      "image": "https://digi-api.com/images/digimon/w/Vademon.png",
+      "daysLeft": 0
+    },
+    {
+      "name": "Vamdemon",
+      "benefit": "🧛‍♂️ Habilita la mansión de Overdell",
+      "image": "https://digi-api.com/images/digimon/w/Vamdemon.png",
+      "daysLeft": 0
+    }
+  ],
+  "comforts": [
+    {
+      "key": "alimento",
+      "label": "Alimento",
+      "icon": "🍖",
+      "color": "#f59e0b",
+      "value": 7,
+      "max": 10,
+      "contribution": 7,
+      "adjustment": 0
+    },
+    {
+      "key": "comodidad",
+      "label": "Comodidad",
+      "icon": "🛋️",
+      "color": "#38bdf8",
+      "value": 8,
+      "max": 10,
+      "contribution": 8,
+      "adjustment": 0
+    },
+    {
+      "key": "entorno",
+      "label": "Entorno",
+      "icon": "🌳",
+      "color": "#22c55e",
+      "value": 6,
+      "max": 10,
+      "contribution": 6,
+      "adjustment": 0
+    },
+    {
+      "key": "limpieza",
+      "label": "Limpieza",
+      "icon": "🧹",
+      "color": "#a78bfa",
+      "value": 7,
+      "max": 10,
+      "contribution": 7,
+      "adjustment": 0
+    },
+    {
+      "key": "seguridad",
+      "label": "Seguridad",
+      "icon": "🛡️",
+      "color": "#ef4444",
+      "value": 9,
+      "max": 10,
+      "contribution": 9,
+      "adjustment": 0
+    },
+    {
+      "key": "ocio",
+      "label": "Ocio",
+      "icon": "🎡",
+      "color": "#ec4899",
+      "value": 7,
+      "max": 10,
+      "contribution": 7,
+      "adjustment": 0
+    }
+  ],
+  "nativeResidents": [
+    {
+      "name": "Jijimon",
+      "desc": "Anciano fundador de Ciudad File. Ofrece información sobre las misiones principales.",
+      "grayscale": false,
+      "comfort": [],
+      "image": "https://digi-api.com/images/digimon/w/Jijimon.png"
+    },
+    {
+      "name": "Babamon",
+      "desc": "QEPD Abuelita.",
+      "grayscale": true,
+      "comfort": [],
+      "image": "https://digi-api.com/images/digimon/w/Babamon.png"
+    },
+    {
+      "name": "Tunomon",
+      "desc": "Enfermero a cargo de la guarderia y cuidado de los huevos.",
+      "grayscale": false,
+      "comfort": [
+        "seguridad"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Tunomon.png"
+    },
+    {
+      "name": "Tanemon",
+      "desc": "Trabaja la huerta básica y se encarga de las comidas diarias.",
+      "grayscale": false,
+      "comfort": [
+        "alimento",
+        "limpieza"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Tanemon.png"
+    },
+    {
+      "name": "Poyomon",
+      "desc": "Ayuda a Agumon en el banco y ofrece estudios sobre la digievolucion.",
+      "grayscale": false,
+      "comfort": [
+        "comodidad"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Poyomon.png"
+    },
+    {
+      "name": "Yuramon",
+      "desc": "Ofrece información sobre las distintas regiones de la isla File.",
+      "grayscale": false,
+      "comfort": [
+        "entorno"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Yuramon.png"
+    },
+    {
+      "name": "Culumon",
+      "desc": "Habilita las digievoluciones y le encanta jugar.",
+      "grayscale": false,
+      "comfort": [
+        "ocio"
+      ],
+      "image": "https://digi-api.com/images/digimon/w/Culumon.png"
+    }
+  ],
+  "news": [
+    {
+      "id": "pescador_isla_file",
+      "emoji": "🎣",
+      "text": "La leyenda del pescador de la isla File."
+    },
+    {
+      "id": "cientifico_ruinas_selva",
+      "emoji": "🔬",
+      "text": "El misterio del científico oculto en las ruinas de la selva."
+    },
+    {
+      "id": "brote_selva",
+      "emoji": "🌱",
+      "text": "El enigma del brote que no quiere florecer en la selva."
+    }
+  ],
+  "character": {
+    "id": 1794879930590,
+    "jugador": "Tao3",
+    "nombre": "Tao3",
+    "edad": "10",
+    "emblema": "Armonía",
+    "digimon": "Koromon",
+    "fase": "Entrenamiento II",
+    "tipo": "Menor",
+    "image": "https://digi-api.com/images/digimon/w/Koromon.png",
+    "stats": {
+      "salud": 66,
+      "espiritu": 0,
+      "fuerza": 54,
+      "defensa": 51,
+      "velocidad": 51,
+      "inteligencia": 52
+    },
+    "statsBonus": {
+      "fuerza": 0,
+      "defensa": 0,
+      "velocidad": 0,
+      "inteligencia": 0
+    },
+    "statsBonusParts": {
+      "fuerza": [],
+      "defensa": [],
+      "velocidad": [],
+      "inteligencia": []
+    },
+    "statSaturation": {
+      "stat": null,
+      "penalty": 0
+    },
+    "hearts": 2,
+    "maxHearts": 2,
+    "muertes": 1,
+    "bits": 2240,
+    "bitsBanco": 0,
+    "comida": 7,
+    "comidaMax": 2,
+    "discos": 2,
+    "status": [],
+    "indicators": [],
+    "needs": {
+      "food": {
+        "satiated": 0,
+        "required": 2
+      },
+      "caca": false,
+      "sueno": false,
+      "training": {
+        "guante": false,
+        "escudo": false,
+        "espadas": false
+      }
+    },
+    "inventory": [
+      {
+        "id": "carne",
+        "nombre": "Carne",
+        "icono": "🍖",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo carne).",
+        "imagen": "",
+        "subtipo": "Carne",
+        "sacia": 1,
+        "cantidad": 3
+      },
+      {
+        "id": "hongo",
+        "nombre": "Hongo",
+        "icono": "🍄",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo vegetal).",
+        "imagen": "",
+        "subtipo": "Vegetal",
+        "sacia": 1,
+        "cantidad": 1
+      },
+      {
+        "id": "manzana_azul",
+        "nombre": "Manzana azul",
+        "icono": "🍎",
+        "tipo": "Alimento",
+        "desc": "Un alimento que se puede transformar en una planta lluvia",
+        "imagen": "",
+        "subtipo": "Fruta",
+        "sacia": 1,
+        "cantidad": 1
+      },
+      {
+        "id": "pastel",
+        "nombre": "Pastel",
+        "icono": "🎂",
+        "tipo": "Alimento",
+        "desc": "Una porción de pastel que le agrada a todos. Sacía 1 de comida.",
+        "imagen": "",
+        "subtipo": "Postre",
+        "sacia": 1,
+        "cantidad": 1
+      },
+      {
+        "id": "pez_pequeno",
+        "nombre": "Pez Pequeño",
+        "icono": "🐟",
+        "tipo": "Alimento",
+        "desc": "Sacia 1 ranura de comida (tipo pescado).",
+        "imagen": "",
+        "subtipo": "Pescado",
+        "sacia": 1,
+        "cantidad": 1
+      },
+      {
+        "id": "disco_curacion",
+        "nombre": "Disco de Curación",
+        "icono": "💾",
+        "tipo": "Curación",
+        "desc": "Restaura 1 corazón de resistencia del personaje.",
+        "imagen": "",
+        "curacion": 1,
+        "cantidad": 2
+      },
+      {
+        "id": "planta_lluvia",
+        "nombre": "Planta de Lluvia",
+        "icono": "🌿🌧️",
+        "tipo": "Curación",
+        "desc": "Restaura todos los corazones faltantes del personaje.",
+        "imagen": "",
+        "cantidad": 2
+      }
+    ],
+    "hasCardAlbum": true,
+    "cardsAlbum": [
+      {
+        "id": "carta_sukamon",
+        "nombre": "Carta: Sukamon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Sukamon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Sukamon.png",
+        "rareza": "Común",
+        "rarezaColor": "#94a3b8",
+        "rarezaKey": "common",
+        "cantidad": 3
+      },
+      {
+        "id": "carta_shakomon",
+        "nombre": "Carta: Shakomon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Shakomon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Shakomon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 2
+      },
+      {
+        "id": "carta_flamon",
+        "nombre": "Carta: Flamon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Flamon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Flamon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_great_king_sukamon",
+        "nombre": "Carta: Great King Sukamon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Great King Sukamon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Great_King_Sukamon.png",
+        "subtipo": "Digimon",
+        "rareza": "Legendaria",
+        "rarezaColor": "#facc15",
+        "rarezaKey": "legendary",
+        "rarezaBorder": "#eab308",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_bio_thunderbirmon",
+        "nombre": "Carta: Bio Thunderbirmon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Bio Thunderbirmon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Bio_Thunderbirmon.png",
+        "subtipo": "Digimon",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "rarezaBorder": "#3b82f6",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_hyougamon",
+        "nombre": "Carta: Hyougamon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Hyougamon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Hyougamon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_jyureimon",
+        "nombre": "Carta: Jyureimon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Jyureimon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Jyureimon.png",
+        "rareza": "Legendaria",
+        "rarezaColor": "#facc15",
+        "rarezaKey": "legendary",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_bakemon",
+        "nombre": "Carta: Bakemon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Bakemon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Bakemon.png",
+        "rareza": "Común",
+        "rarezaColor": "#94a3b8",
+        "rarezaKey": "common",
+        "cantidad": 4
+      },
+      {
+        "id": "carta_tuwarmon",
+        "nombre": "Carta: Tuwarmon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Tuwarmon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Tuwarmon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_gaomon",
+        "nombre": "Carta: Gaomon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Gaomon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Gaomon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_minotaurmon",
+        "nombre": "Carta: Minotaurmon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Minotaurmon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Minotaurmon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_floramon",
+        "nombre": "Carta: Floramon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Floramon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Floramon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_black_growmon",
+        "nombre": "Carta: Black Growmon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Black Growmon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Black_Growmon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_alraumon",
+        "nombre": "Carta: Alraumon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Alraumon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Alraumon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_mamemon",
+        "nombre": "Carta: Mamemon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Mamemon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Mamemon.png",
+        "rareza": "Épica",
+        "rarezaColor": "#c084fc",
+        "rarezaKey": "epic",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_nanimon",
+        "nombre": "Carta: Nanimon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Nanimon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Nanimon.png",
+        "rareza": "Común",
+        "rarezaColor": "#94a3b8",
+        "rarezaKey": "common",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_gerbemon",
+        "nombre": "Carta: Gerbemon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Gerbemon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Gerbemon.png",
+        "rareza": "Épica",
+        "rarezaColor": "#c084fc",
+        "rarezaKey": "epic",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_bakumon",
+        "nombre": "Carta: Bakumon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Bakumon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Bakumon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_numemon",
+        "nombre": "Carta: Numemon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Numemon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Numemon.png",
+        "rareza": "Común",
+        "rarezaColor": "#94a3b8",
+        "rarezaKey": "common",
+        "cantidad": 3
+      },
+      {
+        "id": "carta_owlmon",
+        "nombre": "Carta: Owlmon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Owlmon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Owlmon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_bio_stegomon",
+        "nombre": "Carta: Bio Stegomon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Bio Stegomon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Bio_Stegomon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_tyumon",
+        "nombre": "Carta: Tyumon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Tyumon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Tyumon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_sepikmon",
+        "nombre": "Carta: Sepikmon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Sepikmon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Sepikmon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_lalamon",
+        "nombre": "Carta: Lalamon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Lalamon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Lalamon.png",
+        "rareza": "Poco común",
+        "rarezaColor": "#4ade80",
+        "rarezaKey": "uncommon",
+        "cantidad": 1
+      },
+      {
+        "id": "carta_ballistamon",
+        "nombre": "Carta: Ballistamon",
+        "icono": "🎴",
+        "tipo": "Carta",
+        "desc": "Carta coleccionable oficial de Ballistamon.",
+        "imagen": "https://digi-api.com/images/digimon/w/Ballistamon.png",
+        "rareza": "Rara",
+        "rarezaColor": "#60a5fa",
+        "rarezaKey": "rare",
+        "cantidad": 1
+      }
+    ],
+    "cardMarket": {
+      "active": true,
+      "day": 72,
+      "requests": [
+        {
+          "npc": "Patamon",
+          "npcName": "Patamon",
+          "icon": "🕊️",
+          "itemId": "carta_numemon",
+          "name": "Numemon",
+          "cardName": "Carta: Numemon",
+          "imagen": "https://digi-api.com/images/digimon/w/Numemon.png",
+          "rarezaKey": "common",
+          "rareza": "Común",
+          "rarezaColor": "#94a3b8",
+          "rarezaBorder": "#64748b",
+          "price": 100,
+          "sold": false,
+          "pending": false
+        },
+        {
+          "npc": "Piyomon",
+          "npcName": "Piyomon",
+          "icon": "🔥",
+          "itemId": "carta_sukamon",
+          "name": "Sukamon",
+          "cardName": "Carta: Sukamon",
+          "imagen": "https://digi-api.com/images/digimon/w/Sukamon.png",
+          "rarezaKey": "common",
+          "rareza": "Común",
+          "rarezaColor": "#94a3b8",
+          "rarezaBorder": "#64748b",
+          "price": 100,
+          "sold": false,
+          "pending": false
+        },
+        {
+          "npc": "Unimon",
+          "npcName": "Unimon",
+          "icon": "🦄",
+          "itemId": "carta_dondokomon",
+          "name": "Dondokomon",
+          "cardName": "Carta: Dondokomon",
+          "imagen": "https://digi-api.com/images/digimon/w/Dondokomon.png",
+          "rarezaKey": "uncommon",
+          "rareza": "Poco común",
+          "rarezaColor": "#4ade80",
+          "rarezaBorder": "#22c55e",
+          "price": 200,
+          "sold": false,
+          "pending": false
+        },
+        {
+          "npc": "Monochromon",
+          "npcName": "Monochromon",
+          "icon": "🦕",
+          "itemId": "carta_kokabuterimon",
+          "name": "Kokabuterimon",
+          "cardName": "Carta: Kokabuterimon",
+          "imagen": "https://digi-api.com/images/digimon/w/Kokabuterimon.png",
+          "rarezaKey": "uncommon",
+          "rareza": "Poco común",
+          "rarezaColor": "#4ade80",
+          "rarezaBorder": "#22c55e",
+          "price": 200,
+          "sold": false,
+          "pending": false
+        }
+      ]
+    },
+    "cardSaleRequest": null,
+    "evolutions": [
+      {
+        "state": "known",
+        "name": "Seadramon",
+        "key": "ac2eda8ee860ee23bad7",
+        "fase": "Campeón",
+        "tipo": "Datos",
+        "image": "https://digi-api.com/images/digimon/w/Seadramon.png",
+        "reqs": {
+          "fuerza": 35,
+          "defensa": 35,
+          "velocidad": 35,
+          "inteligencia": 30
+        },
+        "unlockedByItem": true,
+        "itemPhaseReady": false,
+        "canRequest": false
+      },
+      {
+        "state": "known",
+        "name": "Fladramon",
+        "key": "afdc89051110631c37c7",
+        "fase": "Campeón",
+        "tipo": "Datos",
+        "image": "https://digi-api.com/images/digimon/w/Fladramon.png",
+        "reqs": {
+          "fuerza": 40,
+          "defensa": 35,
+          "velocidad": 35,
+          "inteligencia": 30
+        },
+        "unlockedByItem": true,
+        "itemPhaseReady": false,
+        "canRequest": false
+      }
+    ],
+    "evolutionLockedDay": 72,
+    "naturalEvolution": "Greymon",
+    "effectLabels": {},
+    "evolutionRequest": null,
+    "playerNotes": "",
+    "playerNotesUpdatedAt": 0,
+    "bankActive": true
+  },
+  "static": true,
+  "exportedAt": "2026-11-25T22:00:58.421Z",
+  "partida": "Prueba",
+  "lanBaseUrl": "http://192.168.0.25:3000"
+}
