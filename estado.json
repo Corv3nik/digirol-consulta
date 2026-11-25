@@ -2,7 +2,8 @@
   "ok": true,
   "saveName": "Sabados",
   "day": 35,
-  "exportedAt": "2026-11-25T21:12:08.600Z",
+  "exportedAt": "2026-11-25T21:31:29.045Z",
   "mapFile": "Sabados.png",
+  "lanBaseUrl": "http://192.168.0.25:3000",
   "playerCount": 4
 }

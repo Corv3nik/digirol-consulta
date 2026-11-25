@@ -1462,6 +1462,14 @@
     const name = data && data.saveName ? data.saveName : 'Partida';
     const day = Math.max(0, Math.trunc(num(data && data.day)));
     $('staticBannerText').textContent = `${name} · Día ${day} · instantánea del ${whenText}`;
+    const lanBtn = $('staticLanBtn');
+    const lanBase = String((data && data.lanBaseUrl) || '').replace(/\/$/, '');
+    if (lanBtn) {
+      lanBtn.hidden = !(lanBase && token);
+      lanBtn.onclick = () => {
+        location.href = `${lanBase}/p/${encodeURIComponent(token)}`;
+      };
+    }
     banner.hidden = false;
   }
 
