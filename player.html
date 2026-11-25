@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0713">
+  <title>DigiRol - Mi Personaje</title>
+  <link rel="icon" type="image/x-icon" href="Image/ico.ico">
+  <link rel="apple-touch-icon" href="Image/ico.ico">
+  <link rel="stylesheet" href="src/styles/player.css">
+</head>
+<body>
+  <div id="bootScreen" class="boot-screen">
+    <div class="boot-logo">DIGI<span>ROL</span></div>
+    <div class="boot-spinner"></div>
+    <p id="bootMessage">Conectando con el Master...</p>
+  </div>
+
+  <div id="errorScreen" class="error-screen" hidden>
+    <div class="error-icon">🔒</div>
+    <h1 id="errorTitle">Enlace no valido</h1>
+    <p id="errorMessage">Pide al Master un enlace nuevo.</p>
+    <button class="btn-primary" onclick="location.reload()">Reintentar</button>
+  </div>
+
+  <div id="app" class="app" hidden>
+    <div id="staticBanner" class="static-banner" hidden>
+      <span class="static-banner-icon">📄</span>
+      <span id="staticBannerText">Consulta de solo lectura</span>
+    </div>
+    <header class="hero">
+      <div class="hero-glow" id="heroGlow"></div>
+      <div class="hero-topline">
+        <div class="day-pills">
+          <span class="day-pill" id="dayPill">Día 0</span>
+          <span class="day-pill day-phase-pill" id="dayPhasePill">☀️ Día</span>
+        </div>
+        <div class="hero-connection">
+          <p class="player-name" id="playerName">👤 Jugador</p>
+          <span class="live-pill" id="livePill"><span class="live-dot"></span> En Línea</span>
+        </div>
+      </div>
+      <div class="hero-main">
+        <div class="hero-portrait-block">
+          <div class="digimon-portrait" id="digimonPortrait" title="Toca para ampliar">
+            <img id="digimonImage" alt="" />
+            <span id="digimonInitial" class="portrait-fallback"></span>
+          </div>
+        </div>
+        <div class="hero-info">
+          <div class="char-title-row">
+            <h1 class="char-name" id="charName">Personaje</h1>
+            <p class="emblem-line" id="emblemLine">Emblema</p>
+          </div>
+          <div class="hero-needs" id="heroNeeds">
+            <div class="need-hunger" id="hungerChip"></div>
+            <div class="chips needs-chips" id="needChips"></div>
+          </div>
+          <p class="digimon-line">
+            <span id="digimonName">Digimon</span>
+            <span class="digimon-tags">
+              <span class="phase-badge" id="phaseBadge">Novato</span>
+              <span class="type-badge" id="typeBadge" hidden></span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <button class="hero-evo-btn" id="evoOpenBtn" type="button" title="Ver digievoluciones" hidden>🧬</button>
+    </header>
+
+    <main class="content">
+      <!-- PERFIL -->
+      <section class="tab-panel" data-panel="perfil">
+        <article class="card training-card" id="trainingCard">
+          <span class="training-card-title">Entrenamiento / Combate</span>
+          <div class="chips training-chips" id="trainingChips"></div>
+        </article>
+
+        <div class="bits-grid bits-grid-4">
+          <article class="card bits-card">
+            <span class="bits-icon">🍖</span>
+            <div>
+              <span class="bits-label">Comida</span>
+              <strong class="bits-value" id="foodValue">0</strong>
+            </div>
+          </article>
+          <article class="card bits-card">
+            <span class="bits-icon">💾</span>
+            <div>
+              <span class="bits-label">Discos</span>
+              <strong class="bits-value" id="discsValue">0</strong>
+            </div>
+          </article>
+          <article class="card bits-card">
+            <span class="bits-icon">🪙</span>
+            <div>
+              <span class="bits-label">Bits</span>
+              <strong class="bits-value" id="bitsValue">0</strong>
+            </div>
+          </article>
+          <article class="card bits-card bank" id="bankCard">
+            <span class="bits-icon">🏦</span>
+            <div>
+              <span class="bits-label">Banco</span>
+              <strong class="bits-value" id="bankValue">0</strong>
+            </div>
+          </article>
+        </div>
+
+        <article class="card hearts-card">
+          <div class="card-head">
+            <h2>Corazones</h2>
+            <div class="hearts-meta">
+              <span class="health-chip" title="Salud base del personaje">
+                <span class="health-chip-label">Salud</span>
+                <strong id="healthValue">0</strong>
+              </span>
+              <span class="death-counter" id="deathCounter" hidden></span>
+              <span class="muted" id="heartsCount">0/0</span>
+            </div>
+          </div>
+          <div class="hearts-row" id="heartsRow"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><h2>Estadisticas</h2></div>
+          <div class="datacore-block">
+            <div class="datacore-head">
+              <span class="datacore-label">✨ DataCore <span class="datacore-emblem" id="datacoreEmblem"></span></span>
+              <strong id="datacorePct">0%</strong>
+            </div>
+            <div class="datacore-track">
+              <div class="datacore-fill" id="datacoreFill"></div>
+            </div>
+          </div>
+          <div class="stats-grid stats-grid-4">
+            <div class="stat-box fue"><span>FUE</span><strong id="statFuerza">0</strong></div>
+            <div class="stat-box def"><span>DEF</span><strong id="statDefensa">0</strong></div>
+            <div class="stat-box vel"><span>VEL</span><strong id="statVelocidad">0</strong></div>
+            <div class="stat-box int"><span>INT</span><strong id="statInteligencia">0</strong></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><h2>Estados alterados</h2></div>
+          <div class="chips" id="statusChips"></div>
+        </article>
+      </section>
+
+      <!-- MOCHILA -->
+      <section class="tab-panel" data-panel="mochila" hidden>
+        <article class="card">
+          <div class="card-head">
+            <h2>Mochila</h2>
+            <span class="muted" id="inventoryCount">0 objetos</span>
+          </div>
+          <div class="inv-filters" id="inventoryFilters"></div>
+          <div class="inventory-list" id="inventoryList"></div>
+        </article>
+      </section>
+
+      <!-- CIUDAD -->
+      <section class="tab-panel" data-panel="ciudad" hidden>
+        <article class="card prosperity-hero">
+          <div class="prosperity-number" id="prosperityNumber">0</div>
+          <div>
+            <h2>Prosperidad</h2>
+            <p class="muted">Digimon activos que ayudan a la ciudad</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>🌡️ Confort de la ciudad</h2>
+          </div>
+          <div class="comfort-meters" id="comfortMetersPlayer"></div>
+        </article>
+
+        <article class="card" id="nativeResidentsCard">
+          <div class="card-head">
+            <h2>🏠 Habitantes nativos</h2>
+            <button class="news-toggle" id="nativeResidentsToggle" type="button" aria-expanded="true">Contraer ▲</button>
+          </div>
+          <div class="prosperity-list" id="nativeResidentsList"></div>
+        </article>
+
+        <div class="prosperity-section-label">🏛️ Digimon activos</div>
+        <div class="prosperity-list" id="prosperityList"></div>
+      </section>
+
+      <!-- MAPA -->
+      <section class="tab-panel" data-panel="mapa" hidden>
+        <article class="card map-card">
+          <div class="card-head">
+            <h2>🗺️ Mapa de la isla</h2>
+          </div>
+          <div class="map-frame" id="mapFrame">
+            <img id="mapImage" alt="Mapa de la isla" hidden />
+            <p class="chips-empty" id="mapEmpty" hidden>El Master todavía no cargó el mapa de esta partida.</p>
+          </div>
+          <div class="map-legend" id="mapLegend" aria-label="Leyenda del mapa">
+            <span class="map-legend-item"><span class="map-legend-icon">🪺</span>Guardería</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🍖</span>Granja de carne</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🥊</span>Gimnasio</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🚽</span>Baño</span>
+            <span class="map-legend-item" data-legend-digimon="Agumon" hidden><span class="map-legend-icon">💰</span>Banco</span>
+            <span class="map-legend-item" data-legend-digimon="Betamon" hidden><span class="map-legend-icon">🛍️</span>Tienda</span>
+            <span class="map-legend-item" data-legend-digimon="Palmon" hidden><span class="map-legend-icon">🍄</span>Huerta de hongos</span>
+            <span class="map-legend-item" data-legend-digimon="Gomamon" hidden><span class="map-legend-icon">🎣</span>Zona de pesca</span>
+            <span class="map-legend-item" data-legend-digimon="Coelamon" hidden><span class="map-legend-icon">⚓</span>Muelle</span>
+            <span class="map-legend-item" data-legend-digimon="Meramon" hidden><span class="map-legend-icon">🍽️</span>Restaurante</span>
+            <span class="map-legend-item" data-legend-digimon="Centalmon" hidden><span class="map-legend-icon">🏥</span>Clínica</span>
+            <span class="map-legend-item" data-legend-digimon="Shellmon" hidden><span class="map-legend-icon">🗞️</span>Puesto de anuncios</span>
+            <span class="map-legend-item" data-legend-digimon="Penmon" hidden><span class="map-legend-icon">🥌</span>Curling</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🌷</span>Floral</span>
+            <span class="map-legend-item"><span class="map-legend-icon">⚙️</span>Sitio de chatarra</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🛕</span>Ruinas / Santuario</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🏰</span>Fortaleza</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🛖</span>Igloo</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🃏</span>Tienda de cartas</span>
+            <span class="map-legend-item"><span class="map-legend-icon">🐸</span>Campamento Geko</span>
+            <span class="map-legend-item" data-legend-digimon="Tyranomon" hidden><span class="map-legend-icon">🏆</span>Arena</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- NOTAS -->
+      <section class="tab-panel" data-panel="notas" hidden>
+        <article class="card notes-card">
+          <div class="card-head">
+            <h2>Mis notas</h2>
+            <span class="save-state" id="notesState">Solo tu puedes editarlas</span>
+          </div>
+          <textarea id="notesInput" class="notes-input" maxlength="20000"
+            placeholder="Escribe aqui tus pistas, planes, nombres, recordatorios..."></textarea>
+          <div class="notes-footer">
+            <span class="muted" id="notesCounter">0 caracteres</span>
+            <button class="btn-primary small" id="notesSaveBtn" type="button">Guardar</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" id="bottomNav">
+      <button class="nav-btn" data-tab="mapa" type="button">
+        <span class="nav-icon">🗺️</span><span>Isla</span>
+      </button>
+      <button class="nav-btn" data-tab="ciudad" type="button">
+        <span class="nav-icon">🏛️</span><span>Ciudad</span>
+      </button>
+      <button class="nav-btn active" data-tab="perfil" type="button">
+        <span class="nav-icon">👾</span><span>Perfil</span>
+      </button>
+      <button class="nav-btn" data-tab="mochila" type="button">
+        <span class="nav-icon">🎒</span><span>Mochila</span>
+      </button>
+      <button class="nav-btn" data-tab="notas" type="button">
+        <span class="nav-icon">📝</span><span>Notas</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="evolutionsModal" class="player-modal" hidden>
+    <div class="player-modal-card">
+      <div class="player-modal-head">
+        <div>
+          <h2>Digievoluciones</h2>
+          <span class="muted" id="evolutionsCount"></span>
+        </div>
+        <button class="player-modal-close" id="evoCloseBtn" type="button" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="itemEvolutionsSection" class="evo-section" hidden>
+        <div class="evo-section-title">🎁 Evoluciones por objeto</div>
+        <div class="evo-grid evo-item-grid" id="itemEvolutionsGrid"></div>
+      </div>
+      <div id="evoKindDivider" class="evo-kind-divider" hidden><span>Especie / Crianza / Tipo</span></div>
+      <div class="evo-grid" id="evolutionsGrid"></div>
+      <p class="evo-request-note" id="evoRequestNote" hidden></p>
+    </div>
+  </div>
+
+  <div id="cardAlbumModal" class="player-modal" hidden>
+    <div class="player-modal-card">
+      <div class="player-modal-head">
+        <div>
+          <h2>Álbum de cartas</h2>
+          <span class="muted" id="cardAlbumCount">0 cartas</span>
+        </div>
+        <button class="player-modal-close" id="cardAlbumCloseBtn" type="button" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="album-toolbar" id="cardAlbumToolbar">
+        <button type="button" class="btn-primary small" data-album-sort="rarity">🌟 Rareza</button>
+        <button type="button" class="btn-primary small" data-album-sort="name">🔤 Nombre</button>
+        <button type="button" class="btn-primary small" id="cardAlbumDirBtn">↑ Asc</button>
+      </div>
+      <div class="card-album-grid" id="cardAlbumGrid"></div>
+    </div>
+  </div>
+
+  <div id="imageLightbox" class="image-lightbox" hidden>
+    <button class="image-lightbox-close" id="imageLightboxClose" type="button" aria-label="Cerrar">✕</button>
+    <img id="imageLightboxImg" alt="" />
+    <p class="image-lightbox-caption" id="imageLightboxCaption"></p>
+  </div>
+
+  <div id="evoFlash" class="evo-flash" hidden aria-hidden="true">
+    <div id="evoFlashPixels" class="evo-flash-pixels"></div>
+    <div class="evo-flash-inner">
+      <span class="evo-flash-icon">🧬</span>
+      <span class="evo-flash-title">DIGIEVOLUCIÓN</span>
+      <span class="evo-flash-name" id="evoFlashName"></span>
+    </div>
+  </div>
+
+  <script src="src/shared/phase-theme.js"></script>
+  <script src="src/player/player.js"></script>
+</body>
+</html>
