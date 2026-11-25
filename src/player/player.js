@@ -1471,6 +1471,7 @@
       : '';
     if (lanBtn) {
       lanBtn.hidden = !(lanBase && token);
+      lanBtn.dataset.partida = table;
       lanBtn.onclick = () => {
         const tableQuery = table ? `?partida=${encodeURIComponent(table)}` : '';
         location.href = `${lanBase}/p/${encodeURIComponent(token)}${tableQuery}`;

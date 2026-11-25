@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "serverTime": 1795644058432,
+  "serverTime": 1795644349783,
   "saveName": "Prueba",
   "mapImage": null,
   "day": 72,
@@ -957,7 +957,7 @@
     "bankActive": true
   },
   "static": true,
-  "exportedAt": "2026-11-25T22:00:58.421Z",
+  "exportedAt": "2026-11-25T22:05:49.770Z",
   "partida": "Prueba",
   "lanBaseUrl": "http://192.168.0.25:3000"
 }
